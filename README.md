@@ -41,7 +41,21 @@ La pulsera UV Destina es un dispositivo wearable innovador diseñado para deport
 
 ## Prototipo propuesto
 
-![Prototipo de la pulsera UV Destina](ruta/a/la/imagen.jpg)
+## Dashboard prototipo
+Monitor de control
+Se presenta una propuesta para el manejo y control de cada uno de los actuadores que dispone la pulsera UV, la finalidad es que el usuario no se complique con una interfaz difícil de manejar y pueda acceder a este control y rápido accionar al dispositivo.
+Se maneja una estructura de 3 botones, los cuales son independientes en cada actuador, con el punto de poder encender y apagar dicho emisor.
+
+## Graficas de información
+La siguiente propuesta dispone de la visualización en formato de graficas con la información en tiempo real de todos los sensores que estan siendo manipulados en su pulsera UV, para poder mantener al usuario informado de su rango de datos y riesgos precisos según lo marcado. Se presentan las gráficas de temperatura, humedad y calidad del aire.
+
+Esta última propuesta muestra a segunda parte de las graficas en donde se visualiza los rayos UV y la presión atmosférica. 
+
+![Arquitectura del proyecto](ruta/a/la/imagen.jpg)
+
+## Wearable prototipo
+![Arquitectura del proyecto](ruta/a/la/imagen.jpg)
+
 
 ## Arquitectura del proyecto
 
