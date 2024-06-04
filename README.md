@@ -120,21 +120,57 @@ La arquitectura propuesta se basa en los siguientes elementos:
 
 ## Tablero Kanban
 
-![Tablero Kanban Sprint 1](ruta/a/la/imagen.jpg)
+Tablero de las tareas que deben realizar, al igual que las ya realizadas, mostrando a detalle en cada una con una descripción de lo que se debe hacer y su asignación.
+Se trabajará con la herramienta Jira para fines de mejorar el control de actividades. 
+
 ![Tablero Kanban Sprint 2](ruta/a/la/imagen.jpg)
+
+Lista de tareas definidas por el momento
+
 ![Tablero Kanban Sprint 3](ruta/a/la/imagen.jpg)
 
+
 ## Circuito diseñado
+
+El circuito muestra el funcionamiento del actuador buzzer, en donde se mide la temperatura y la humedad del ambiente con un sensor DHT22.
+
+![Circuito del proyecto](ruta/a/la/imagen.jpg)
 
 ![Circuito del proyecto](ruta/a/la/imagen.jpg)
 
 ## Resultados
 
+Primera prueba de funcionamiento con la indicación del niveles de humedad y temperatura altos, se debe encender el led color rojo y hacer sonar el buzzer.
+
 ![Resultado 1](ruta/a/la/imagen.jpg)
 Descripción del resultado 1.
 
-![Resultado 2](ruta/a/la/imagen.jpg)
-Descripción del resultado 2.
 
-![Resultado 3](ruta/a/la/imagen.jpg)
-Descripción del resultado 3.
+## Competencia en el mercado
+
+**Replior – Trial On line**
+En colaboración con SunSense
+Replior se está asociando con Sunsense, de base noruega, que es un proveedor líder mundial de tecnología de sensores UV usables, para proporcionar al ensayo clínico adaptado al sensor UV con integración directa en la plataforma de captura de datos Trial Online.
+Especificación técnica: 
+•	Dimensiones: 24,3mm de diámetro, 8,3 mm
+•	Carcasa de aluminio anodizado (costomizable)
+•	Dómetro de luz con sensor UVA-UVB ponderado erio con difusor optimizado por el wearable
+•	Salida promedio real de 2 minutos de UVI, UVA/UVB, R, G y B
+•	Medición del espectro personalizable
+•	Bluetooth Comunicación de baja energía. Rango: 5-10m
+•	Respuesta angular: 90 grados
+•	Batería, más de 300 días de operación continua
+•	Prueba de Splash
+•	Soluciones de desgaste flexibles con pulsera, clip y opciones sin cuello
+•	La superficie lisa, fácil de limpiar previene la grasa y la acumulación de sucisión que podría afectar la precisión del sensor.
+ 
+
+
+
+**Banda Huawei Color Band A1**
+Especificación técnica: 
+•	Las pulseras Honor Band A1 están formadas por una sujeción que puede ser de goma o de piel y de un sensor metálico que ha recibido la certificación IP57, que se recopila los datos y los transmite a otro soporte a través de conexión bluetooth 4.2. No posee ni pantalla, pero sí un LED y vibración para comunicarse con el usuario cuando su smartphone recibe notificaciones de llamadas, mensajes u otros contenidos que decida configurar.
+•	Permite la medición del ejercicio (pasos, velocidad y calorías consumidas) y del sueño. Sin embargo, sí incluye un sensor con el que no cuenta la Mi Band, el sensor de rayos ultravioleta, un elemento cada vez más extendido entre los móviles chinos dada la prioridad que da el mercado chino a la protección contra el sol.
+•	La batería de esta pulsera deportiva es de 70 mAh y, según Huawei, eso es suficiente para que esté despierta durante 28 días. Después es necesario volver a recargar el sensor, algo que se hace mediante su puerto micro USB. El peso total es de 20 gramos.
+
+
