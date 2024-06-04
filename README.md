@@ -53,6 +53,7 @@ Descripción: Como usuario, quiero que la pulsera procese y muestre los datos de
 Monitor de control
 Se presenta una propuesta para el manejo y control de cada uno de los actuadores que dispone la pulsera UV, la finalidad es que el usuario no se complique con una interfaz difícil de manejar y pueda acceder a este control y rápido accionar al dispositivo.
 Se maneja una estructura de 3 botones, los cuales son independientes en cada actuador, con el punto de poder encender y apagar dicho emisor.
+
 ![Dashboard](ruta/a/la/imagen.jpg)
 
 **Graficas de información**
@@ -66,18 +67,47 @@ Esta última propuesta muestra a segunda parte de las graficas en donde se visua
 
 ![Arquitectura del proyecto](ruta/a/la/imagen.jpg)
 
+**Funcionalidades del prototipo**
+1. **Medición y monitoreo en tiempo real**
+	- Los sensores integrados miden continuamente la temperatura y humedad ambiental, la temperatura corporal, la calidad del aire y los niveles de radiación UV.
+	- Los datos son procesados y mostrados en la pantalla OLED de la pulsera.
+2. **Alertas y notificaciones**
+	- El zumbador buzzer emite un sonido y los LEDs cambian de color para alertar al usuario cuando se detectan niveles peligrosos.
+
+**Beneficios**
+
+Monitoreo de salud personal: Ayuda a los usuarios a mantenerse informados sobre su salud y las condiciones ambientales, permitiéndoles tomar medidas preventivas.
+- Prevención de enfermedades: Alerta al usuario sobre niveles peligrosos de radiación UV y calidad del aire, ayudando a prevenir enfermedades relacionadas con la exposición a estos factores.
+- Uso diario y deportivo: Ideal para personas que pasan mucho tiempo al aire libre, deportistas y aquellos que desean monitorear su salud en tiempo real.
 
 ## Arquitectura del proyecto
 
 ![Arquitectura del proyecto](ruta/a/la/imagen.jpg)
+La arquitectura propuesta se basa en los siguientes elementos:
+***Pulsera***
+1. **Sensores**
+   - Ltr390-uv: Sensor de rayos UV.
+   - BMP280: Sensor de humedad, temperatura ambiental y presión atmosférica.
+   - CCS811, EN160+ATH21: Sensor de calidad del aire.
+     
+3. **Controlador**
+   - ESP32 LVGL: Placa de desarrollo con pantalla LCD para procesar y visualizar los datos de los sensores.
+     
+5. **Almacenamiento**
+   - SQLite: Base de datos integrada para almacenar los datos de los sensores.
+     
+7. **Comunicación**
+   - HTTP: Protocolo para enviar los datos a Node-RED.
+   - MQTT: Protocolo para la comunicación con el broker MQTT.
+   - Cifrado SSL/TLS: Para asegurar la comunicación y proteger los datos.
 
-La arquitectura del proyecto incluye los siguientes elementos:
-- Sensores: Ltr390-uv (rayos UV), BMP280 (temperatura, humedad y presión atmosférica), CCS811 y EN160+ATH21 (calidad del aire)
-- Controlador: ESP32 LVGL con pantalla LCD táctil
-- Plataforma de base de datos: SQLite para almacenamiento local de datos
-- Protocolo de comunicación: HTTP y MQTT para envío de datos a Node-RED y comunicación con dispositivos receptores
-- Gestión de energía: Batería recargable y optimización del consumo energético
-- Dispositivos receptores: Panel de control en Node-RED para monitoreo y visualización de datos
+9. **Energía**
+   - Batería: Fuente de alimentación para la pulsera.
+   - Gestión de energía: Para optimizar el consumo y prolongar la duración de la batería.
+
+***Node-Red***
+   - Procesamiento: Recibe los datos de la pulsera y realiza el procesamiento necesario.
+   - Visualización: Permite visualizar los datos en un dashboard o interfaz de usuario.
 
 ## Tablero Kanban
 
