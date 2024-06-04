@@ -151,18 +151,19 @@ Descripción del resultado 1.
 **Replior – Trial On line**
 En colaboración con SunSense
 Replior se está asociando con Sunsense, de base noruega, que es un proveedor líder mundial de tecnología de sensores UV usables, para proporcionar al ensayo clínico adaptado al sensor UV con integración directa en la plataforma de captura de datos Trial Online.
-Especificación técnica: 
-•	Dimensiones: 24,3mm de diámetro, 8,3 mm
-•	Carcasa de aluminio anodizado (costomizable)
-•	Dómetro de luz con sensor UVA-UVB ponderado erio con difusor optimizado por el wearable
-•	Salida promedio real de 2 minutos de UVI, UVA/UVB, R, G y B
-•	Medición del espectro personalizable
-•	Bluetooth Comunicación de baja energía. Rango: 5-10m
-•	Respuesta angular: 90 grados
-•	Batería, más de 300 días de operación continua
-•	Prueba de Splash
-•	Soluciones de desgaste flexibles con pulsera, clip y opciones sin cuello
-•	La superficie lisa, fácil de limpiar previene la grasa y la acumulación de sucisión que podría afectar la precisión del sensor.
+
+***Especificación técnica: ***
+- Dimensiones: 24,3mm de diámetro, 8,3 mm
+- Carcasa de aluminio anodizado (costomizable)
+- Dómetro de luz con sensor UVA-UVB ponderado erio con difusor optimizado por el wearable
+- Salida promedio real de 2 minutos de UVI, UVA/UVB, R, G y B
+- Medición del espectro personalizable
+- Bluetooth Comunicación de baja energía. Rango: 5-10m
+- Respuesta angular: 90 grados
+- Batería, más de 300 días de operación continua
+- Prueba de Splash
+- Soluciones de desgaste flexibles con pulsera, clip y opciones sin cuello
+- La superficie lisa, fácil de limpiar previene la grasa y la acumulación de sucisión que podría afectar la precisión del sensor.
  
 
 
