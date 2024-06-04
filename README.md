@@ -1,8 +1,8 @@
-# Pulsera UV Destina
+# Pulsera UV 
 
-## Enunciado de visión
+## Visión
 
-La pulsera UV Destina es un dispositivo wearable innovador diseñado para deportistas y mujeres que buscan proteger su piel de los dañinos rayos UV. Con sensores integrados y una dashboard complementario. Destinada a proporcionar datos precisos sobre la exposición a los rayos UV, presión atmosférica, calidad del aire y medición de temperatura y humedad en el ambiente, con la finalidad de mitigar los riesgos de cáncer de piel. Su diseño elegante, y batería de larga duración lo convierten en el compañero perfecto para actividades al aire libre. Destina se diferencia de la competencia al ofrecer una solución específica y asequible para aquellos que priorizan la salud de su piel.
+La pulsera UV es un dispositivo wearable innovador diseñado para deportistas y mujeres que buscan proteger su piel de los dañinos rayos UV. Con sensores integrados y una dashboard complementario. Destinada a proporcionar datos precisos sobre la exposición a los rayos UV, presión atmosférica, calidad del aire y medición de temperatura y humedad en el ambiente, con la finalidad de mitigar los riesgos de cáncer de piel. Su diseño elegante, y batería de larga duración lo convierten en el compañero perfecto para actividades al aire libre. Destina se diferencia de la competencia al ofrecer una solución específica y asequible para aquellos que priorizan la salud de su piel.
 
 ## Software empleado
 
@@ -29,12 +29,20 @@ La pulsera UV Destina es un dispositivo wearable innovador diseñado para deport
 | ESP32                 | ![ESP32](https://m.media-amazon.com/images/I/61CGj47IJNS._AC_SX522_.jpg)               | El ESP32 emplea un microprocesador Tensilica Xtensa LX6 en sus variantes de simple y doble núcleo e incluye interruptores de antena, balun de radiofrecuencia, amplificador de potencia, amplificador receptor de bajo ruido, filtros, y módulos de administración de energía.                                                                                                                                                                                                                           | 1        |
 | Leds                  | ![Leds](https://uelectronics.com/wp-content/uploads/2017/06/M02007-1.jpg)                | Dispositivo que permite el paso de corriente en un solo sentido y que al ser polarizado emite un haz de luz.                                                                                                                                                                                                                                                                                                                                                                                             | 2        |
 ## Historias de usuario épicas
+Descripción: Como usuario, quiero que la pulsera mida y muestre la temperatura y humedad ambiental para estar al tanto de las condiciones ambientales y tomar decisiones informadas.
 
 1. **Medición de temperatura y humedad ambiental**
-   - Como usuario, quiero que la pulsera mida y muestre la temperatura y humedad ambiental para estar al tanto de las condiciones ambientales y tomar decisiones informadas.
+Descripción: Como desarrollador, quiero integrar un sensor de temperatura y humedad en la pulsera para medir las condiciones ambientales.
+   **Criterios de aceptación:
+	   - El sensor de temperatura y humedad debe estar conectado a la ESP32.
+	   - Debe poder leer y enviar datos de temperatura y humedad al microcontrolador.
 
 2. **Monitoreo de la calidad del aire**
-   - Como usuario, quiero que la pulsera detecte y alerte sobre niveles peligrosos de gases y compuestos orgánicos volátiles en el aire para proteger mi salud respiratoria.
+Descripción: Como usuario, quiero que la pulsera procese y muestre los datos de temperatura y humedad en tiempo real.
+   **Criterios de aceptación:
+     - Los datos de temperatura y humedad deben ser procesados y actualizados cada minuto.
+	  - La pantalla de la pulsera debe mostrar la temperatura y humedad actuales.
+ 
 
 3. **Detección de rayos UV y alertas de protección solar**
    - Como usuario, quiero que la pulsera mida los niveles de radiación UV y me avise cuando sea necesario aplicar protector solar o buscar sombra para prevenir daños en la piel.
