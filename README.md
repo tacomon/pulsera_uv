@@ -83,8 +83,11 @@ Monitoreo de salud personal: Ayuda a los usuarios a mantenerse informados sobre 
 ## Arquitectura del proyecto
 
 ![Arquitectura del proyecto](ruta/a/la/imagen.jpg)
+
 La arquitectura propuesta se basa en los siguientes elementos:
+
 ***Pulsera***
+
 1. **Sensores**
    - Ltr390-uv: Sensor de rayos UV.
    - BMP280: Sensor de humedad, temperatura ambiental y presión atmosférica.
@@ -106,8 +109,14 @@ La arquitectura propuesta se basa en los siguientes elementos:
    - Gestión de energía: Para optimizar el consumo y prolongar la duración de la batería.
 
 ***Node-Red***
-   - Procesamiento: Recibe los datos de la pulsera y realiza el procesamiento necesario.
-   - Visualización: Permite visualizar los datos en un dashboard o interfaz de usuario.
+1.  Procesamiento: Recibe los datos de la pulsera y realiza el procesamiento necesario.
+2.  Visualización: Permite visualizar los datos en un dashboard o interfaz de usuario.
+
+***Broker MQTT***
+1. Actúa como intermediario para la comunicación entre la pulsera y los dispositivos receptores.
+
+***Dispositivos receptores***
+1. Panel de control: Proporciona una interfaz para monitorear y controlar el sistema.
 
 ## Tablero Kanban
 
