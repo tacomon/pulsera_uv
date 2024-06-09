@@ -63,6 +63,8 @@ Esta última propuesta muestra a segunda parte de las graficas en donde se visua
 
 ![Dashboard](ruta/a/la/imagen.jpg)
 
+![Dashboard](ruta/a/la/imagen.jpg)
+
 **Wearable prototipo**
 
 ![Arquitectura del proyecto](ruta/a/la/imagen.jpg)
