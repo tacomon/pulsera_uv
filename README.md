@@ -67,7 +67,7 @@ Esta última propuesta muestra a segunda parte de las graficas en donde se visua
 
 **Wearable prototipo**
 
-![Arquitectura del proyecto](pulsera/New Wireframe 1.png)
+![Prototipo del proyecto](pulsera/NewWireframe.png)
 
 **Funcionalidades del prototipo**
 1. **Medición y monitoreo en tiempo real**
