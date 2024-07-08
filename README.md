@@ -21,13 +21,13 @@ La pulsera UV es un dispositivo wearable innovador diseñado para deportistas y 
 
 | Nombre                | Imagen                                    | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Cantidad |
 |-----------------------|-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| ESP32 LVGL            | ![ESP32 LVGL](https://m.media-amazon.com/images/I/61txFmVlQUL._AC_SX522_.jpg)          | La placa de desarrollo ESP32 LVGL cuenta con una pantalla LCD táctil de 2.8 pulgadas y una resolución de 320×240 píxeles. Además, tiene conectividad WiFi y Bluetooth, lo que la hace ideal para proyectos de Robótica, IoT y Domótica.                                                                                                                                                                                                                                                                   | 1        |
-| Sensor Ltr390-uv      | ![Sensor Ltr390-uv](https://cdn.shopify.com/s/files/1/0020/8027/6524/products/LTR390UV_720x@2x.jpg?v=1617257430)    | El sensor Ltr390-uv es de bajo consumo con gran estabilidad y sensibilidad, con un ángulo de visión de hasta 130 grados. Es de ultra bajo consumo de aproximadamente 1 mA. Ideal para proyectos de monitoreo de luz UV.                                                                                                                                                                                                                                                                                 | 1        |
-| Sensor BMP280         | ![Sensor BMP280](https://cdn-shop.adafruit.com/970x728/2651-00.jpg)       | El módulo BMP280 de presión atmosférica se utiliza para medir la presión barométrica, temperatura y la humedad relativa. Además, todo está integrado en un solo chip piezo-resistivo realmente compacto y de bajo consumo energético.                                                                                                                                                                                                                                                                    | 1        |
-| Sensor CCS811, EN160+ATH21 | ![Sensor CCS811, EN160+ATH21](https://cdn.shopify.com/s/files/1/0020/8027/6524/products/ENS160_720x@2x.jpg?v=1636973723) | Es un sensor multigas digital especialmente diseñado para el monitoreo de la calidad del aire interior. Puede detectar mejor una variedad de gases y compuestos orgánicos volátiles (COV), incluyendo tolueno, hidrógeno, etanol, NO2 y ozono.                                                                                                                                                                                                                                                             | 1        |
-| Zumbador buzzer KY-006 | ![Zumbador buzzer KY-006](https://www.electronicoscaldas.com/3183-large_default/modulo-buzzer-pasivo-ky-006.jpg) | El Zumbador Buzzer Pasivo Módulo KY-006 es un sensor piezoeléctrico el cual puede reproducir tonos de sonido entre un rango de 1.5Hz a 2.5 kHz dependiendo de la frecuencia de entrada, ya sea mediante retardos o modulación de ancho de pulso.                                                                                                                                                                                                                                                         | 1        |
-| ESP32                 | ![ESP32](https://m.media-amazon.com/images/I/61CGj47IJNS._AC_SX522_.jpg)               | El ESP32 emplea un microprocesador Tensilica Xtensa LX6 en sus variantes de simple y doble núcleo e incluye interruptores de antena, balun de radiofrecuencia, amplificador de potencia, amplificador receptor de bajo ruido, filtros, y módulos de administración de energía.                                                                                                                                                                                                                           | 1        |
-| Leds                  | ![Leds](https://uelectronics.com/wp-content/uploads/2017/06/M02007-1.jpg)                | Dispositivo que permite el paso de corriente en un solo sentido y que al ser polarizado emite un haz de luz.                                                                                                                                                                                                                                                                                                                                                                                             | 2        |
+| Smart TV - escolar           | ![Smart TV](pulsera/LVGL.jpg)          | La pantalla de una televisión de 32″ tiene una diagonal de 81 cm. con una alto de 39,8 cm. y un ancho de 70,8 cm. Los televisores de 32 pulgadas son una opción popular por su versatilidad y tamaño compacto.                                                                                                                                                                                                                                                                   | 1        |
+| Sensor Ltr390-uv      | ![Sensor Ltr390-uv](pulsera/Ltr.jpg)    | El sensor Ltr390-uv es de bajo consumo con gran estabilidad y sensibilidad, con un ángulo de visión de hasta 130 grados. Es de ultra bajo consumo de aproximadamente 1 mA. Ideal para proyectos de monitoreo de luz UV.                                                                                                                                                                                                                                                                                 | 1        |
+| Sensor BMP280         | ![Sensor BMP280](pulsera/BMP280.jpg)       | El módulo BMP280 de presión atmosférica se utiliza para medir la presión barométrica, temperatura y la humedad relativa. Además, todo está integrado en un solo chip piezo-resistivo realmente compacto y de bajo consumo energético.                                                                                                                                                                                                                                                                    | 1        |
+| Sensor CCS811, EN160+ATH21 | ![Sensor CCS811, EN160+ATH21](pulsera/CCS811.png) | Es un sensor multigas digital especialmente diseñado para el monitoreo de la calidad del aire interior. Puede detectar mejor una variedad de gases y compuestos orgánicos volátiles (COV), incluyendo tolueno, hidrógeno, etanol, NO2 y ozono.                                                                                                                                                                                                                                                             | 1        |
+| Zumbador buzzer KY-006 | ![Zumbador buzzer KY-006](pulsera/buzzer.jpg) | El Zumbador Buzzer Pasivo Módulo KY-006 es un sensor piezoeléctrico el cual puede reproducir tonos de sonido entre un rango de 1.5Hz a 2.5 kHz dependiendo de la frecuencia de entrada, ya sea mediante retardos o modulación de ancho de pulso.                                                                                                                                                                                                                                                         | 1        |
+| ESP32                 | ![ESP32](pulsera/tESP32.jpg)               | El ESP32 emplea un microprocesador Tensilica Xtensa LX6 en sus variantes de simple y doble núcleo e incluye interruptores de antena, balun de radiofrecuencia, amplificador de potencia, amplificador receptor de bajo ruido, filtros, y módulos de administración de energía.                                                                                                                                                                                                                           | 1        |
+| Leds                  | ![Leds](pulsera/leds.jpg)                | Dispositivo que permite el paso de corriente en un solo sentido y que al ser polarizado emite un haz de luz.                                                                                                                                                                                                                                                                                                                                                                                             | 2        |
 ## Historias de usuario épicas
 Descripción: Como usuario, quiero que la pulsera mida y muestre la temperatura y humedad ambiental para estar al tanto de las condiciones ambientales y tomar decisiones informadas.
 
@@ -54,20 +54,20 @@ Monitor de control
 Se presenta una propuesta para el manejo y control de cada uno de los actuadores que dispone la pulsera UV, la finalidad es que el usuario no se complique con una interfaz difícil de manejar y pueda acceder a este control y rápido accionar al dispositivo.
 Se maneja una estructura de 3 botones, los cuales son independientes en cada actuador, con el punto de poder encender y apagar dicho emisor.
 
-![Dashboard](ruta/a/la/imagen.jpg)
+![Dashboard](pulsera/dashboard1.jpg)
 
 **Graficas de información**
 La siguiente propuesta dispone de la visualización en formato de graficas con la información en tiempo real de todos los sensores que estan siendo manipulados en su pulsera UV, para poder mantener al usuario informado de su rango de datos y riesgos precisos según lo marcado. Se presentan las gráficas de temperatura, humedad y calidad del aire.
 
 Esta última propuesta muestra a segunda parte de las graficas en donde se visualiza los rayos UV y la presión atmosférica. 
 
-![Dashboard](ruta/a/la/imagen.jpg)
+![Dashboard](pulsera/dashboard2.jpg)
 
-![Dashboard](ruta/a/la/imagen.jpg)
+![Dashboard](pulsera/dashboardUv.jpg)
 
 **Wearable prototipo**
 
-![Arquitectura del proyecto](ruta/a/la/imagen.jpg)
+![Arquitectura del proyecto](pulsera/New Wireframe 1.png)
 
 **Funcionalidades del prototipo**
 1. **Medición y monitoreo en tiempo real**
@@ -84,7 +84,7 @@ Monitoreo de salud personal: Ayuda a los usuarios a mantenerse informados sobre 
 
 ## Arquitectura del proyecto
 
-![Arquitectura del proyecto](ruta/a/la/imagen.jpg)
+![Arquitectura del proyecto](pulsera/arquitectura.png)
 
 La arquitectura propuesta se basa en los siguientes elementos:
 
@@ -125,27 +125,26 @@ La arquitectura propuesta se basa en los siguientes elementos:
 Tablero de las tareas que deben realizar, al igual que las ya realizadas, mostrando a detalle en cada una con una descripción de lo que se debe hacer y su asignación.
 Se trabajará con la herramienta Jira para fines de mejorar el control de actividades. 
 
-![Tablero Kanban Sprint 2](ruta/a/la/imagen.jpg)
+![Tablero Kanban Sprint 2](pulsera/kanban1.png)
 
 Lista de tareas definidas por el momento
 
-![Tablero Kanban Sprint 3](ruta/a/la/imagen.jpg)
+![Tablero Kanban Sprint 3](pulsera/kanban2.png)
 
 
 ## Circuito diseñado
 
 El circuito muestra el funcionamiento del actuador buzzer, en donde se mide la temperatura y la humedad del ambiente con un sensor DHT22.
 
-![Circuito del proyecto](ruta/a/la/imagen.jpg)
+![Circuito del proyecto](pulsera/Sprint1-DiagramaCodigo.jpg)
 
-![Circuito del proyecto](ruta/a/la/imagen.jpg)
+![Circuito del proyecto](pulsera/Sprint1-DiagramaCodigo2.jpg)
 
 ## Resultados
 
 Primera prueba de funcionamiento con la indicación del niveles de humedad y temperatura altos, se debe encender el led color rojo y hacer sonar el buzzer.
 
-![Resultado 1](ruta/a/la/imagen.jpg)
-Descripción del resultado 1.
+![Resultado 1](pulsera/resultados.png)
 
 
 ## Competencia en el mercado
