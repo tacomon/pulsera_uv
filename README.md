@@ -7,9 +7,7 @@ La pulsera UV es un dispositivo wearable innovador diseñado para deportistas y 
 ## Software empleado
 
 | Nombre                | Licencia                                                                                        |
-|-----------------------|--------------------------------------------------------------------------------------------------|
-| Node-RED              | Apache License 2.0                                                                              |
-| Arduino IDE           | GNU Lesser General Public License (LGPL)                                                        |
+|-----------------------|-------------------------------------------------------------------------------------------------|
 | SQLite                | Public Domain                                                                                   |
 | Adafruit_Sensor       | Apache License 2.0                                                                              |
 | Adafruit_BME280       | BSD License                                                                                     |
@@ -102,20 +100,12 @@ La arquitectura propuesta se basa en los siguientes elementos:
    - SQLite: Base de datos integrada para almacenar los datos de los sensores.
      
 7. **Comunicación**
-   - HTTP: Protocolo para enviar los datos a Node-RED.
-   - MQTT: Protocolo para la comunicación con el broker MQTT.
-   - Cifrado SSL/TLS: Para asegurar la comunicación y proteger los datos.
-
+   - Servidor (ESP32): Define endpoints (rutas URL) para manejar solicitudes GET y POST. Escucha y responde a las solicitudes entrantes con datos o realiza acciones basadas en la solicitud
+   - Cliente (Flutter): Envía solicitudes GET para obtener datos del ESP32. Envía solicitudes POST para enviar datos o comandos al ESP32. Recibe y maneja las respuestas del ESP32, actualizando la interfaz de usuario según sea necesario.
+     
 9. **Energía**
    - Batería: Fuente de alimentación para la pulsera.
    - Gestión de energía: Para optimizar el consumo y prolongar la duración de la batería.
-
-***Node-Red***
-1.  Procesamiento: Recibe los datos de la pulsera y realiza el procesamiento necesario.
-2.  Visualización: Permite visualizar los datos en un dashboard o interfaz de usuario.
-
-***Broker MQTT***
-1. Actúa como intermediario para la comunicación entre la pulsera y los dispositivos receptores.
 
 ***Dispositivos receptores***
 1. Panel de control: Proporciona una interfaz para monitorear y controlar el sistema.
