@@ -2,20 +2,20 @@
 
 ## Visión
 
-La pulsera UV es un dispositivo wearable innovador diseñado para deportistas y mujeres que buscan proteger su piel de los dañinos rayos UV. Con sensores integrados y una dashboard complementario. Destinada a proporcionar datos precisos sobre la exposición a los rayos UV, presión atmosférica, calidad del aire y medición de temperatura y humedad en el ambiente, con la finalidad de mitigar los riesgos de cáncer de piel. Su diseño elegante, y batería de larga duración lo convierten en el compañero perfecto para actividades al aire libre. Destina se diferencia de la competencia al ofrecer una solución específica y asequible para aquellos que priorizan la salud de su piel.
+La pulsera UV es un dispositivo wearable innovador diseñado para deportistas y mujeres que buscan proteger su piel de los dañinos rayos UV. Con sensores integrados y una dashboard complementario. Destinada a proporcionar datos precisos sobre la exposición a los rayos UV, presión atmosférica, calidad del aire y medición de temperatura y humedad en el ambiente, con la finalidad de mitigar los riesgos de cáncer de piel. Su diseño elegante, y batería de larga duración lo convierten en el compañero perfecto para actividades al aire libre. Destina se diferencia de la competencia al ofrecer una solución específica y accesible para aquellos que priorizan la salud de su piel.
 
 ## Software empleado
 
 | Nombre                | Licencia                                                                                        |
-|-----------------------|--------------------------------------------------------------------------------------------------|
-| Node-RED              | Apache License 2.0                                                                              |
-| Arduino IDE           | GNU Lesser General Public License (LGPL)                                                        |
+|-----------------------|-------------------------------------------------------------------------------------------------|
 | SQLite                | Public Domain                                                                                   |
 | Adafruit_Sensor       | Apache License 2.0                                                                              |
 | Adafruit_BME280       | BSD License                                                                                     |
 | Adafruit_ADXL345      | BSD License                                                                                     |
 | Adafruit_CCS811       | Apache License 2.0                                                                              |
 | Adafruit_AHTX0        | BSD License                                                                                     |
+| Flutter		| Version 3.24.1 - Dart 3.5.1									  |
+| Android Studio	| Version 2024.1.1 SHA-256									  |
 
 ## Hardware empleado
 
@@ -27,32 +27,81 @@ La pulsera UV es un dispositivo wearable innovador diseñado para deportistas y 
 | Sensor CCS811, EN160+ATH21 | ![Sensor CCS811, EN160+ATH21](pulsera/CCS811.png) | Es un sensor multigas digital especialmente diseñado para el monitoreo de la calidad del aire interior. Puede detectar mejor una variedad de gases y compuestos orgánicos volátiles (COV), incluyendo tolueno, hidrógeno, etanol, NO2 y ozono.                                                                                                                                                                                                                                                             | 1        |
 | Zumbador buzzer KY-006 | ![Zumbador buzzer KY-006](pulsera/buzzer.jpg) | El Zumbador Buzzer Pasivo Módulo KY-006 es un sensor piezoeléctrico el cual puede reproducir tonos de sonido entre un rango de 1.5Hz a 2.5 kHz dependiendo de la frecuencia de entrada, ya sea mediante retardos o modulación de ancho de pulso.                                                                                                                                                                                                                                                         | 1        |
 | ESP32                 | ![ESP32](pulsera/tESP32.jpg)               | El ESP32 emplea un microprocesador Tensilica Xtensa LX6 en sus variantes de simple y doble núcleo e incluye interruptores de antena, balun de radiofrecuencia, amplificador de potencia, amplificador receptor de bajo ruido, filtros, y módulos de administración de energía.                                                                                                                                                                                                                           | 1        |
-| Leds                  | ![Leds](pulsera/leds.jpg)                | Dispositivo que permite el paso de corriente en un solo sentido y que al ser polarizado emite un haz de luz.                                                                                                                                                                                                                                                                                                                                                                                             | 2        |
-## Historias de usuario épicas
-Descripción: Como usuario, quiero que la pulsera mida y muestre la temperatura y humedad ambiental para estar al tanto de las condiciones ambientales y tomar decisiones informadas.
+| Leds                  | ![Leds](pulsera/leds.jpg)                | Dispositivo que permite el paso de corriente en un solo sentido y que al ser polarizado emite un haz de luz.                                                                                                                                                                                                                                                                                                                                                                                          | 3        |
+| Buzzer                  | ![Buzzer](pulsera/buzzer.jpg)                | Un zumbador (en inglés buzzer) es un transductor electroacústico que produce un sonido o zumbido continuo o intermitente de un mismo tono (generalmente agudo).                                                                                                                                                                                                                                                                                                                                                                             | 1        |
+| Boton                  | ![Boton](pulsera/boton.jpg)                | Dispositivo que permite el paso de corriente en un solo sentido y que al ser polarizado emite un haz de luz.                                                                                                                                                                                                                                                                                 | 1        |
+| Funda deportiva                  | ![Leds](pulsera/funda.jpg)                | Dispositivo que permite el paso de corriente en un solo sentido y que al ser polarizado emite un haz de luz.                                                                                                                                                                                                                                                                                                                                                                                             | 1        |
 
-1. **Medición de temperatura y humedad ambiental**
-Descripción: Como desarrollador, quiero integrar un sensor de temperatura y humedad en la pulsera para medir las condiciones ambientales.
-   **Criterios de aceptación:
-	   - El sensor de temperatura y humedad debe estar conectado a la ESP32.
-	   - Debe poder leer y enviar datos de temperatura y humedad al microcontrolador.
+## Historias de usuario 
+### Lectura de datos de los sensores
 
-2. **Monitoreo de la calidad del aire**
-Descripción: Como usuario, quiero que la pulsera procese y muestre los datos de temperatura y humedad en tiempo real.
-   **Criterios de aceptación:
-     - Los datos de temperatura y humedad deben ser procesados y actualizados cada minuto.
-	  - La pantalla de la pulsera debe mostrar la temperatura y humedad actuales.
- 
+**Historia de usuario:**  
+Como desarrollador, quiero poder leer los datos de los sensores de rayos UV, temperatura, humedad, presión atmosférica y calidad de aire, para poder obtener mediciones precisas en tiempo real y utilizarlas en mi aplicación.
 
-3. **Detección de rayos UV y alertas de protección solar**
-   - Como usuario, quiero que la pulsera mida los niveles de radiación UV y me avise cuando sea necesario aplicar protector solar o buscar sombra para prevenir daños en la piel.
+**Criterios de aceptación:**
+- Los sensores están conectados y configurados correctamente para transmitir datos.
+- Los datos se obtienen y procesan en tiempo real.
+
+### Integración de sensores para mediciones precisas
+
+**Historia de usuario:**  
+Como desarrollador, quiero integrar sensores de rayos UV, temperatura, humedad, presión atmosférica y calidad de aire en mi sistema, para asegurarme de que las mediciones que obtengo son precisas y fiables.
+
+**Criterios de aceptación:**
+- Los sensores están calibrados y proporcionan datos dentro de un rango aceptable de precisión.
+- Los sensores están integrados en la aplicación de manera que los datos se actualizan continuamente.
+
+### Visualización en tiempo real en una app de Flutter
+
+**Historia de usuario:**  
+Como usuario, quiero ver los datos de los sensores en tiempo real en una aplicación de Flutter, para poder monitorear las condiciones ambientales de manera inmediata desde mi dispositivo móvil.
+
+**Criterios de aceptación:**
+- La aplicación de Flutter muestra los datos en tiempo real sin retraso significativo.
+- La interfaz es clara y fácil de entender para monitorear todos los datos importantes.
+
+### Diseño de gráficos y visualizaciones
+
+**Historia de usuario:**  
+Como usuario, quiero ver gráficos y visualizaciones de los datos obtenidos por los sensores, para comprender mejor las tendencias y patrones en las mediciones.
+
+**Criterios de aceptación:**
+- La aplicación muestra gráficos que representan los datos de manera clara y efectiva.
+- Los gráficos se actualizan en tiempo real con los nuevos datos de los sensores.
+
+### Registro y almacenamiento de datos de sensores
+
+**Historia de usuario:**  
+Como desarrollador, quiero registrar y almacenar los datos de los sensores de presión atmosférica, UV, humedad, y calidad de aire, para poder analizar las tendencias a largo plazo y realizar revisiones históricas de las condiciones.
+
+**Criterios de aceptación:**
+- Los datos se almacenan de manera segura y están disponibles para su análisis posterior.
+- El sistema permite acceder a datos históricos con facilidad.
+
+### Activación de LED y buzzer por alta temperatura
+
+**Historia de usuario:**  
+Como usuario, quiero que se activen un LED y un buzzer cuando la temperatura alcance un nivel muy alto, para que pueda recibir una alerta inmediata sobre condiciones peligrosas.
+
+**Criterios de aceptación:**
+- El sistema monitorea continuamente la temperatura.
+- El LED y el buzzer se activan automáticamente cuando la temperatura supera un umbral predefinido.
+
+### Visualización de datos y gráficos en pantalla OLED
+
+**Historia de usuario:**  
+Como usuario, quiero ver los datos de los sensores y sus gráficas correspondientes en una pantalla OLED, para poder monitorear las condiciones directamente desde el dispositivo sin necesidad de una aplicación externa.
+
+**Criterios de aceptación:**
+- La pantalla OLED muestra los datos de manera clara y fácil de leer.
+- Las gráficas en la pantalla OLED se actualizan en tiempo real con los datos obtenidos por los sensores.
 
 ## Prototipo propuesto
 
 **Dashboard prototipo**
 Monitor de control
 Se presenta una propuesta para el manejo y control de cada uno de los actuadores que dispone la pulsera UV, la finalidad es que el usuario no se complique con una interfaz difícil de manejar y pueda acceder a este control y rápido accionar al dispositivo.
-Se maneja una estructura de 3 botones, los cuales son independientes en cada actuador, con el punto de poder encender y apagar dicho emisor.
+Se maneja una estructura de 1 botón, el cual permite manejar el actuador de forma que pueda encender y apagar dicho emisor.
 
 ![Dashboard](pulsera/dashboard1.jpg)
 
@@ -65,9 +114,13 @@ Esta última propuesta muestra a segunda parte de las graficas en donde se visua
 
 ![Dashboard](pulsera/dashboardUv.jpg)
 
+## Resultado de Dashboard
+Muestra las graficas de control de cada uno de los sesnores que se manejan, mostrando de una forma visual los resultados que identifican en tiempo real.
+![Dashboard](pulsera/pantalla-dash.jpg)
+
 **Wearable prototipo**
 
-![Arquitectura del proyecto](pulsera/New Wireframe 1.png)
+![Prototipo del proyecto](pulsera/NewWireframe.png)
 
 **Funcionalidades del prototipo**
 1. **Medición y monitoreo en tiempo real**
@@ -95,27 +148,16 @@ La arquitectura propuesta se basa en los siguientes elementos:
    - BMP280: Sensor de humedad, temperatura ambiental y presión atmosférica.
    - CCS811, EN160+ATH21: Sensor de calidad del aire.
      
-3. **Controlador**
-   - ESP32 LVGL: Placa de desarrollo con pantalla LCD para procesar y visualizar los datos de los sensores.
-     
-5. **Almacenamiento**
+2. **Almacenamiento**
    - SQLite: Base de datos integrada para almacenar los datos de los sensores.
      
-7. **Comunicación**
-   - HTTP: Protocolo para enviar los datos a Node-RED.
-   - MQTT: Protocolo para la comunicación con el broker MQTT.
-   - Cifrado SSL/TLS: Para asegurar la comunicación y proteger los datos.
-
-9. **Energía**
+3. **Comunicación**
+   - Servidor (ESP32): Define endpoints (rutas URL) para manejar solicitudes GET y POST. Escucha y responde a las solicitudes entrantes con datos o realiza acciones basadas en la solicitud
+   - Cliente (Flutter): Envía solicitudes GET para obtener datos del ESP32. Envía solicitudes POST para enviar datos o comandos al ESP32. Recibe y maneja las respuestas del ESP32, actualizando la interfaz de usuario según sea necesario.
+     
+4. **Energía**
    - Batería: Fuente de alimentación para la pulsera.
    - Gestión de energía: Para optimizar el consumo y prolongar la duración de la batería.
-
-***Node-Red***
-1.  Procesamiento: Recibe los datos de la pulsera y realiza el procesamiento necesario.
-2.  Visualización: Permite visualizar los datos en un dashboard o interfaz de usuario.
-
-***Broker MQTT***
-1. Actúa como intermediario para la comunicación entre la pulsera y los dispositivos receptores.
 
 ***Dispositivos receptores***
 1. Panel de control: Proporciona una interfaz para monitorear y controlar el sistema.
@@ -131,6 +173,10 @@ Lista de tareas definidas por el momento
 
 ![Tablero Kanban Sprint 3](pulsera/kanban2.png)
 
+**Actividades culminadas**
+![Tablero Kanban Resultado](pulsera/ListaK.png)
+![Tablero Kanban Resultado](pulsera/ListaK2.png)
+
 
 ## Circuito diseñado
 
@@ -142,9 +188,8 @@ El circuito muestra el funcionamiento del actuador buzzer, en donde se mide la t
 
 ## Resultados
 
-Primera prueba de funcionamiento con la indicación del niveles de humedad y temperatura altos, se debe encender el led color rojo y hacer sonar el buzzer.
-
-![Resultado 1](pulsera/resultados.png)
+Resultado del circuito completado para el prototipo, usando ESP32, integrando todos los sensores y actuadores.
+![Circuito Terminado](pulsera/circuitoTerminado.jpg)
 
 
 ## Competencia en el mercado
