@@ -32,24 +32,69 @@ La pulsera UV es un dispositivo wearable innovador diseñado para deportistas y 
 | Boton                  | ![Boton](pulsera/leds.jpg)                | Dispositivo que permite el paso de corriente en un solo sentido y que al ser polarizado emite un haz de luz.                                                                                                                                                                                                                                                                                 | 1        |
 | Funda deportiva                  | ![Leds](pulsera/leds.jpg)                | Dispositivo que permite el paso de corriente en un solo sentido y que al ser polarizado emite un haz de luz.                                                                                                                                                                                                                                                                                                                                                                                             | 2        |
 
-## Historias de usuario épicas
-Descripción: Como usuario, quiero que la pulsera mida y muestre la temperatura y humedad ambiental para estar al tanto de las condiciones ambientales y tomar decisiones informadas.
+## Historias de usuario 
+### Lectura de datos de los sensores
 
-1. **Medición de temperatura y humedad ambiental**
-Descripción: Como desarrollador, quiero integrar un sensor de temperatura y humedad en la pulsera para medir las condiciones ambientales.
-   **Criterios de aceptación:
-	   - El sensor de temperatura y humedad debe estar conectado a la ESP32.
-	   - Debe poder leer y enviar datos de temperatura y humedad al microcontrolador.
+**Historia de usuario:**  
+Como desarrollador, quiero poder leer los datos de los sensores de rayos UV, temperatura, humedad, presión atmosférica y calidad de aire, para poder obtener mediciones precisas en tiempo real y utilizarlas en mi aplicación.
 
-2. **Monitoreo de la calidad del aire**
-Descripción: Como usuario, quiero que la pulsera procese y muestre los datos de temperatura y humedad en tiempo real.
-   **Criterios de aceptación:
-     - Los datos de temperatura y humedad deben ser procesados y actualizados cada minuto.
-	  - La pantalla de la pulsera debe mostrar la temperatura y humedad actuales.
- 
+**Criterios de aceptación:**
+- Los sensores están conectados y configurados correctamente para transmitir datos.
+- Los datos se obtienen y procesan en tiempo real.
 
-3. **Detección de rayos UV y alertas de protección solar**
-   - Como usuario, quiero que la pulsera mida los niveles de radiación UV y me avise cuando sea necesario aplicar protector solar o buscar sombra para prevenir daños en la piel.
+### Integración de sensores para mediciones precisas
+
+**Historia de usuario:**  
+Como desarrollador, quiero integrar sensores de rayos UV, temperatura, humedad, presión atmosférica y calidad de aire en mi sistema, para asegurarme de que las mediciones que obtengo son precisas y fiables.
+
+**Criterios de aceptación:**
+- Los sensores están calibrados y proporcionan datos dentro de un rango aceptable de precisión.
+- Los sensores están integrados en la aplicación de manera que los datos se actualizan continuamente.
+
+### Visualización en tiempo real en una app de Flutter
+
+**Historia de usuario:**  
+Como usuario, quiero ver los datos de los sensores en tiempo real en una aplicación de Flutter, para poder monitorear las condiciones ambientales de manera inmediata desde mi dispositivo móvil.
+
+**Criterios de aceptación:**
+- La aplicación de Flutter muestra los datos en tiempo real sin retraso significativo.
+- La interfaz es clara y fácil de entender para monitorear todos los datos importantes.
+
+### Diseño de gráficos y visualizaciones
+
+**Historia de usuario:**  
+Como usuario, quiero ver gráficos y visualizaciones de los datos obtenidos por los sensores, para comprender mejor las tendencias y patrones en las mediciones.
+
+**Criterios de aceptación:**
+- La aplicación muestra gráficos que representan los datos de manera clara y efectiva.
+- Los gráficos se actualizan en tiempo real con los nuevos datos de los sensores.
+
+### Registro y almacenamiento de datos de sensores
+
+**Historia de usuario:**  
+Como desarrollador, quiero registrar y almacenar los datos de los sensores de presión atmosférica, UV, humedad, y calidad de aire, para poder analizar las tendencias a largo plazo y realizar revisiones históricas de las condiciones.
+
+**Criterios de aceptación:**
+- Los datos se almacenan de manera segura y están disponibles para su análisis posterior.
+- El sistema permite acceder a datos históricos con facilidad.
+
+### Activación de LED y buzzer por alta temperatura
+
+**Historia de usuario:**  
+Como usuario, quiero que se activen un LED y un buzzer cuando la temperatura alcance un nivel muy alto, para que pueda recibir una alerta inmediata sobre condiciones peligrosas.
+
+**Criterios de aceptación:**
+- El sistema monitorea continuamente la temperatura.
+- El LED y el buzzer se activan automáticamente cuando la temperatura supera un umbral predefinido.
+
+### Visualización de datos y gráficos en pantalla OLED
+
+**Historia de usuario:**  
+Como usuario, quiero ver los datos de los sensores y sus gráficas correspondientes en una pantalla OLED, para poder monitorear las condiciones directamente desde el dispositivo sin necesidad de una aplicación externa.
+
+**Criterios de aceptación:**
+- La pantalla OLED muestra los datos de manera clara y fácil de leer.
+- Las gráficas en la pantalla OLED se actualizan en tiempo real con los datos obtenidos por los sensores.
 
 ## Prototipo propuesto
 
@@ -68,6 +113,10 @@ Esta última propuesta muestra a segunda parte de las graficas en donde se visua
 ![Dashboard](pulsera/dashboard2.jpg)
 
 ![Dashboard](pulsera/dashboardUv.jpg)
+
+## Resultado de Dashboard
+Muestra las graficas de control de cada uno de los sesnores que se manejan, mostrando de una forma visual los resultados que identifican en tiempo real.
+![Dashboard](pulsera/pantalla-dash.jpg)
 
 **Wearable prototipo**
 
@@ -99,17 +148,14 @@ La arquitectura propuesta se basa en los siguientes elementos:
    - BMP280: Sensor de humedad, temperatura ambiental y presión atmosférica.
    - CCS811, EN160+ATH21: Sensor de calidad del aire.
      
-3. **Controlador**
-   - ESP32 LVGL: Placa de desarrollo con pantalla LCD para procesar y visualizar los datos de los sensores.
-     
-5. **Almacenamiento**
+2. **Almacenamiento**
    - SQLite: Base de datos integrada para almacenar los datos de los sensores.
      
-7. **Comunicación**
+3. **Comunicación**
    - Servidor (ESP32): Define endpoints (rutas URL) para manejar solicitudes GET y POST. Escucha y responde a las solicitudes entrantes con datos o realiza acciones basadas en la solicitud
    - Cliente (Flutter): Envía solicitudes GET para obtener datos del ESP32. Envía solicitudes POST para enviar datos o comandos al ESP32. Recibe y maneja las respuestas del ESP32, actualizando la interfaz de usuario según sea necesario.
      
-9. **Energía**
+4. **Energía**
    - Batería: Fuente de alimentación para la pulsera.
    - Gestión de energía: Para optimizar el consumo y prolongar la duración de la batería.
 
@@ -127,6 +173,10 @@ Lista de tareas definidas por el momento
 
 ![Tablero Kanban Sprint 3](pulsera/kanban2.png)
 
+**Actividades culminadas**
+![Tablero Kanban Resultado](pulsera/ListaK.png)
+![Tablero Kanban Resultado](pulsera/ListaK2.png)
+
 
 ## Circuito diseñado
 
@@ -138,9 +188,8 @@ El circuito muestra el funcionamiento del actuador buzzer, en donde se mide la t
 
 ## Resultados
 
-Primera prueba de funcionamiento con la indicación del niveles de humedad y temperatura altos, se debe encender el led color rojo y hacer sonar el buzzer.
-
-![Resultado 1](pulsera/resultados.png)
+Resultado del circuito completado para el prototipo, usando ESP32, integrando todos los sensores y actuadores.
+![Circuito Terminado](pulsera/circuitoTerminado.jpg)
 
 
 ## Competencia en el mercado
