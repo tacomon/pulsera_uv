@@ -191,6 +191,29 @@ Resultado del circuito completado para el prototipo, usando ESP32, integrando to
 ![Circuito Terminado](pulsera/circuitoTerminado.jpg)
 
 
+
+## Resultado del proyecto
+**Gráficas de dashboard**
+El resultado de las gráficas muestra los datos de los sensores, dando una retroalimentación de las variables ambientales durante el proceso del deporte.
+![Datos de Temperatura y Humedad](pulsera/dashboardfinal2.jpg)
+
+**Resultado de Rayos UV y calidad de Aire CO2** 
+![Calidad de aire y Rayos UV](pulsera/dashboardfinal.jpg)
+
+**Resultados historicos en graficas**
+![Grafica historica](pulsera/graficas1.jpg)
+![Grafica historica](pulsera/GraficaPresion.jpg)
+
+## Resultado de prototipo funcional
+![Prototipo final](pulsera/ResultadoProto.jpg)
+
+## Video de resultados de prototipo
+![Prototipo final](https://drive.google.com/file/d/1abR8TL-tO_zTHfGL85REK7LWB-YN_SgL/view?usp=sharing)
+
+
+
+
+
 ## Competencia en el mercado
 
 **Replior – Trial On line**
