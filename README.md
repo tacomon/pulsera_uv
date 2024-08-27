@@ -30,7 +30,7 @@ La pulsera UV es un dispositivo wearable innovador diseñado para deportistas y 
 | Leds                  | ![Leds](pulsera/leds.jpg)                | Dispositivo que permite el paso de corriente en un solo sentido y que al ser polarizado emite un haz de luz.                                                                                                                                                                                                                                                                                                                                                                                          | 3        |
 | Boton                  | ![Boton](pulsera/boton.jpg)                | Dispositivo que permite el paso de corriente en un solo sentido y que al ser polarizado emite un haz de luz.                                                                                                                                                                                                                                                                                 | 1        |
 | Funda deportiva                  | ![Leds](pulsera/funda.jpg)                | Dispositivo que permite el paso de corriente en un solo sentido y que al ser polarizado emite un haz de luz.                                                                                                                                                                                                                                                                                                                                                                                             | 1        |
-
+<br><br>
 ## Historias de usuario 
 ### Lectura de datos de los sensores
 
@@ -59,6 +59,7 @@ Como usuario, quiero ver los datos de los sensores en tiempo real en una aplicac
 - La aplicación de Flutter muestra los datos en tiempo real sin retraso significativo.
 - La interfaz es clara y fácil de entender para monitorear todos los datos importantes.
 
+<br><br>
 ### Diseño de gráficos y visualizaciones
 
 **Historia de usuario:**  
@@ -68,6 +69,7 @@ Como usuario, quiero ver gráficos y visualizaciones de los datos obtenidos por 
 - La aplicación muestra gráficos que representan los datos de manera clara y efectiva.
 - Los gráficos se actualizan en tiempo real con los nuevos datos de los sensores.
 
+<br><br>
 ### Registro y almacenamiento de datos de sensores
 
 **Historia de usuario:**  
@@ -95,6 +97,7 @@ Como usuario, quiero ver los datos de los sensores y sus gráficas correspondien
 - La pantalla OLED muestra los datos de manera clara y fácil de leer.
 - Las gráficas en la pantalla OLED se actualizan en tiempo real con los datos obtenidos por los sensores.
 
+<br><br>
 ## Prototipo propuesto
 
 **Dashboard prototipo**
@@ -113,9 +116,6 @@ Esta última propuesta muestra a segunda parte de las graficas en donde se visua
 
 ![Dashboard](pulsera/dashboardUv.jpg)
 
-## Resultado de Dashboard
-Muestra las graficas de control de cada uno de los sesnores que se manejan, mostrando de una forma visual los resultados que identifican en tiempo real.
-![Dashboard](pulsera/pantalla-dash.jpg)
 
 **Wearable prototipo**
 
@@ -134,6 +134,7 @@ Monitoreo de salud personal: Ayuda a los usuarios a mantenerse informados sobre 
 - Prevención de enfermedades: Alerta al usuario sobre niveles peligrosos de radiación UV y calidad del aire, ayudando a prevenir enfermedades relacionadas con la exposición a estos factores.
 - Uso diario y deportivo: Ideal para personas que pasan mucho tiempo al aire libre, deportistas y aquellos que desean monitorear su salud en tiempo real.
 
+<br><br>
 ## Arquitectura del proyecto
 
 ![Arquitectura del proyecto](pulsera/arquitectura.png)
@@ -161,6 +162,8 @@ La arquitectura propuesta se basa en los siguientes elementos:
 ***Dispositivos receptores***
 1. Panel de control: Proporciona una interfaz para monitorear y controlar el sistema.
 
+
+<br><br>
 ## Tablero Kanban
 
 Tablero de las tareas que deben realizar, al igual que las ya realizadas, mostrando a detalle en cada una con una descripción de lo que se debe hacer y su asignación.
@@ -176,7 +179,7 @@ Lista de tareas definidas por el momento
 ![Tablero Kanban Resultado](pulsera/ListaK.png)
 ![Tablero Kanban Resultado](pulsera/ListaK2.png)
 
-
+<br><br>
 ## Circuito diseñado
 
 El circuito muestra el funcionamiento del actuador buzzer, en donde se mide la temperatura y la humedad del ambiente con un sensor DHT22.
@@ -191,7 +194,7 @@ Resultado del circuito completado para el prototipo, usando ESP32, integrando to
 ![Circuito Terminado](pulsera/circuitoTerminado.jpg)
 
 
-
+<br><br>
 ## Resultado del proyecto
 **Gráficas de dashboard**
 El resultado de las gráficas muestra los datos de los sensores, dando una retroalimentación de las variables ambientales durante el proceso del deporte.
@@ -213,7 +216,7 @@ El resultado de las gráficas muestra los datos de los sensores, dando una retro
 
 
 
-
+<br><br>
 ## Competencia en el mercado
 
 **Replior – Trial On line**
